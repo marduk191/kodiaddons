@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.marduk191" name="marduk191s Addons" version="1.0" provider-name="marduk191">
+<addon id="repository.marduk191" name="marduk191s Addons" version="1.0.1" provider-name="marduk191">
 	<extension point="xbmc.addon.repository" name="marduk191s addons">
 		<info compressed="false">https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml.md5</checksum>
