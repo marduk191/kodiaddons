@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.marduk191" name="marduk191s Addons" version="1.0" provider-name="marduk191">
+	<extension point="xbmc.addon.repository" name="marduk191s addons">
+		<info compressed="false">https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marduk191/kodiaddons/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>marduk191s Kodi Addons</summary>
+		<description>This is my test shit!</description>
+		<disclaimer>Not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please do some research if you have any concerns about features included in the products you find here before using it! YOU are choosing to make these modifications, and if you point the finger at me for messing up your device, wI will laugh at you. Your warranty will be void if you tamper with any part of your device / software. </disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
