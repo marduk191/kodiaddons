@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ytcodingvids"
+	name="Youtube Coding help"
+	version="0.1.0"
+	provider-name="marduk191">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">It's a riddle, wraped in enigma, hidden behind the fridge.</summary>
+    <description lang="en">Learn how to code with these simple videos!</description>
+    <platform>all</platform>
+    <forum>marduk191.blogspot.com</forum>
+    <website>marduk191.blogspot.com</website>
+  </extension>
+</addon>
