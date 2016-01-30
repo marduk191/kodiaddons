@@ -62,6 +62,7 @@ def main_list(params):
         title=""+CHANNEL_NAME_1+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID1+"/",
         thumbnail=icon,
+        fanart=fan_art,
         folder=True )
         
     plugintools.add_item( 
@@ -69,6 +70,7 @@ def main_list(params):
         title=""+CHANNEL_NAME_2+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID2+"/",
         thumbnail=icon,
+        fanart=fan_art,
         folder=True )
 
 ### Search        
@@ -77,6 +79,7 @@ def main_list(params):
     	title="Search for 'Coding' on YouTube",
   	url='plugin://plugin.video.youtube/search/?q=Coding',
     	thumbnail=icon,
+    	fanart=fan_art,
     	folder=True )
         
 ####################################################################################
