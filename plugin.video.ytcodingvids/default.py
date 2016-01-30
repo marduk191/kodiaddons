@@ -16,17 +16,26 @@ local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
 
 #################################################################################
-##################### Insert channel names here #################################
+###################### Insert channel ID here ###################################
 #################################################################################
+
 YOUTUBE_CHANNEL_ID1 = "PLcUid3OP_4OXOUqYTDGjq-iEwtBf-3l2E"
 YOUTUBE_CHANNEL_ID2 = "PLcUid3OP_4OW-rwv_mBHzx9MmE5TxvvcQ"
+
+#################################################################################
+######################## Insert channel names here ##############################
+#################################################################################
+
+CHANNEL_NAME_1 = "Bash basics"
+CHANNEL_NAME_2 = "Using SED"
+
 #################################################################################
 
 ### Entry point
 def run():
     plugintools.log("ytcodingvids.run")
     
-    ### Get params
+### Get params
     params = plugintools.get_params()
     
     if params.get("action") is None:
@@ -47,14 +56,14 @@ def main_list(params):
 
     plugintools.add_item( 
         #action="", 
-        title="Bash basics",
+        title=""+CHANNEL_NAME_1+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID1+"/",
         thumbnail=icon,
         folder=True )
         
     plugintools.add_item( 
         #action="", 
-        title="Using SED",
+        title=""+CHANNEL_NAME_2+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID2+"/",
         thumbnail=icon,
         folder=True )
