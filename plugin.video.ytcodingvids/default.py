@@ -10,18 +10,11 @@ import plugintools
 import xbmc,xbmcaddon
 from addon.common.addon import Addon
 
-################################################################################
-#################### Set a Name for the plugin #################################
-################################################################################
-
-plugname = ytcodingvids
-
-################################################################################
-
-addonID = 'plugin.video.plugname'
+addonID = 'plugin.video.ytcodingvids'
 addon = Addon(addonID, sys.argv)
 local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
+fanart = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.ytcodingvids', 'fanart.jpg'))
 
 #################################################################################
 ###################### Insert channel ID here ###################################
@@ -43,7 +36,7 @@ CHANNEL_NAME_2 = "Using SED"
 
 ### Entry point
 def run():
-    plugintools.log(""+plugname+".run")
+    plugintools.log("ytcodingvids.run")
     
 ### Get params
     params = plugintools.get_params()
@@ -58,7 +51,7 @@ def run():
 
 ### Main menu
 def main_list(params):
-    plugintools.log(""+plugname+".main_list "+repr(params))
+    plugintools.log("ytcodingvids.main_list "+repr(params))
 
 ###################################################################################
 ##################### Menu code for channels ######################################
@@ -70,7 +63,7 @@ def main_list(params):
         title=""+CHANNEL_NAME_1+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID1+"/",
         thumbnail=icon,
-        fanart=fan_art,
+        fanart=fanart,
         folder=True )
         
     plugintools.add_item( 
@@ -78,7 +71,7 @@ def main_list(params):
         title=""+CHANNEL_NAME_2+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID2+"/",
         thumbnail=icon,
-        fanart=fan_art,
+        fanart=fanart,
         folder=True )
 
 ### Search        
@@ -87,7 +80,7 @@ def main_list(params):
     	title="Search for 'Coding' on YouTube",
   	url='plugin://plugin.video.youtube/search/?q=Coding',
     	thumbnail=icon,
-    	fanart=fan_art,
+    	fanart=fanart,
     	folder=True )
         
 ####################################################################################
