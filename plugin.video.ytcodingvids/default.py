@@ -56,6 +56,7 @@ def main_list(params):
 ##################### Menu code for channels ######################################
 ###################################################################################
 
+### Channel additions
     plugintools.add_item( 
         #action="", 
         title=""+CHANNEL_NAME_1+"",
@@ -69,6 +70,14 @@ def main_list(params):
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID2+"/",
         thumbnail=icon,
         folder=True )
+
+### Search        
+    plugintools.add_item( 
+        #action="", 
+    	title="Search for 'Coding' on YouTube",
+  	url='plugin://plugin.video.youtube/search/?q=Coding',
+    	thumbnail=icon,
+    	folder=True )
         
 ####################################################################################
 run()
