@@ -10,7 +10,15 @@ import plugintools
 import xbmc,xbmcaddon
 from addon.common.addon import Addon
 
-addonID = 'plugin.video.ytcodingvids'
+################################################################################
+#################### Set a Name for the plugin #################################
+################################################################################
+
+plugname = ytcodingvids
+
+################################################################################
+
+addonID = 'plugin.video.plugname'
 addon = Addon(addonID, sys.argv)
 local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
@@ -35,7 +43,7 @@ CHANNEL_NAME_2 = "Using SED"
 
 ### Entry point
 def run():
-    plugintools.log("ytcodingvids.run")
+    plugintools.log(""+plugname+".run")
     
 ### Get params
     params = plugintools.get_params()
@@ -50,7 +58,7 @@ def run():
 
 ### Main menu
 def main_list(params):
-    plugintools.log("ytcodingvids.main_list "+repr(params))
+    plugintools.log(""+plugname+".main_list "+repr(params))
 
 ###################################################################################
 ##################### Menu code for channels ######################################
