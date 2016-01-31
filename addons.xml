@@ -2,7 +2,7 @@
 <addons>
 <addon id="plugin.video.ytcodingvids"
 	name="Coding Videos"
-	version="0.1.8"
+	version="0.1.9"
 	provider-name="marduk191">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

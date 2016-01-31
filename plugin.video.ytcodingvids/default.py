@@ -24,13 +24,22 @@ fanart = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.ytc
 
 YOUTUBE_CHANNEL_ID1 = "PLcUid3OP_4OXOUqYTDGjq-iEwtBf-3l2E"
 YOUTUBE_CHANNEL_ID2 = "PLcUid3OP_4OW-rwv_mBHzx9MmE5TxvvcQ"
-
+YOUTUBE_CHANNEL_ID3 = "PLcUid3OP_4OX9q80EIEAWsolQV5cr6RQx"
+YOUTUBE_CHANNEL_ID4 = "PLcUid3OP_4OUakQfcLmaQADU3nqGXantN"
+YOUTUBE_CHANNEL_ID5 = "PLcUid3OP_4OXhaCvxKPE6YGT75UJzrtOl"
+YOUTUBE_CHANNEL_ID6 = "PLcUid3OP_4OVMt2os96qImqAoNsXiZRHv"
+YOUTUBE_CHANNEL_ID7 = "PL7D2ADFB4C470C6A0"
 #################################################################################
 ######################## Insert channel names here ##############################
 #################################################################################
 
 CHANNEL_NAME_1 = "Bash basics"
 CHANNEL_NAME_2 = "Using SED"
+CHANNEL_NAME_3 = "Android"
+CHANNEL_NAME_4 = "Python 3 Basics"
+CHANNEL_NAME_5 = "HTML5 Canvas Basics"
+CHANNEL_NAME_6 = "PHP Tutorials"
+CHANNEL_NAME_7 = "JavaScript"
 
 #################################################################################
 
@@ -74,6 +83,46 @@ def main_list(params):
         fanart=fanart,
         folder=True )
 
+    plugintools.add_item( 
+        #action="", 
+        title=""+CHANNEL_NAME_3+"",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID3+"/",
+        thumbnail=icon,
+        fanart=fanart,
+        folder=True )
+        
+    plugintools.add_item( 
+        #action="", 
+        title=""+CHANNEL_NAME_4+"",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID4+"/",
+        thumbnail=icon,
+        fanart=fanart,
+        folder=True )                
+
+    plugintools.add_item( 
+        #action="", 
+        title=""+CHANNEL_NAME_5+"",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID5+"/",
+        thumbnail=icon,
+        fanart=fanart,
+        folder=True )        
+
+    plugintools.add_item( 
+        #action="", 
+        title=""+CHANNEL_NAME_6+"",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID6+"/",
+        thumbnail=icon,
+        fanart=fanart,
+        folder=True )
+
+    plugintools.add_item( 
+        #action="", 
+        title=""+CHANNEL_NAME_7+"",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID7+"/",
+        thumbnail=icon,
+        fanart=fanart,
+        folder=True )        
+        
 ### Search        
     plugintools.add_item( 
         #action="", 
