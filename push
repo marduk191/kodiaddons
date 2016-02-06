@@ -1,0 +1,23 @@
+#!/bin/bash
+## Kodi Repo tool frontend
+## By marduk191
+## email: marduk191@gmail.com
+while getopts ":sf" flags;
+do
+    case $flags in
+s)
+	git add .
+	git commit -a
+	git push origin master
+	;;
+f)
+	python release.py
+	git add .
+	git commit -a
+	git push origin master
+	;;
+h)
+        echo "push -s for single repo commits"
+        echo "push -r to do a release"
+   esac
+done
