@@ -1,3 +1,6 @@
+version 0.2.0
+Old Youtube plugin does not work, use newer one
+
 version 0.1.9
 Added 5 channels
 
