@@ -23,6 +23,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.sourcefed"
+	name="Sourcefed"
+	version="1.0.0"
+	provider-name="marduk191">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.17"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="sourcefed.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Welcome to SourceFed! Everything that should and shouldn't matter explained by the people who love the same things you do. We do the news... sort of.</summary>
+    <description lang="en">Welcome to SourceFed! Everything that should and shouldn't matter explained by the people who love the same things you do. We do the news... sort of.</description>
+    <platform>all</platform>
+    <website>http://sourcefed.com/</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.youtube" name="YouTube" version="5.1.17" provider-name="bromix">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -81,7 +101,7 @@
   </extension>
 </addon>
 
-<addon id="repository.marduk191" name="marduk191s Addons" version="1.0.4" provider-name="marduk191">
+<addon id="repository.marduk191" name="marduk191s Addons" version="1.0.5" provider-name="marduk191">
 	<extension point="xbmc.addon.repository" name="marduk191s addons">
 		<info compressed="false">https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml</info>
 		<checksum>https://raw.githubusercontent.com/marduk191/kodiaddons/master/addons.xml.md5</checksum>
