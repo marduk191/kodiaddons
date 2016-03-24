@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.sourcefed"
+	name="Sourcefed"
+	version="1.0.0"
+	provider-name="marduk191">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.1.17"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="sourcefed.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Welcome to SourceFed! Everything that should and shouldn't matter explained by the people who love the same things you do. We do the news... sort of.</summary>
+    <description lang="en">Welcome to SourceFed! Everything that should and shouldn't matter explained by the people who love the same things you do. We do the news... sort of.</description>
+    <platform>all</platform>
+    <website>http://sourcefed.com/</website>
+  </extension>
+</addon>
