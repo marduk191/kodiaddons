@@ -28,15 +28,9 @@ def run():
     
     plugintools.close_item_list()
 
-### Main menu
 def main_list(params):
     plugintools.log("sourcefed.main_list "+repr(params))
 
-###################################################################################
-##################### Menu code for channels ######################################
-###################################################################################
-
-### Channel additions
     plugintools.add_item(
         #action="",
         title="[COLOR red]Sourcefed[/COLOR]",
@@ -77,5 +71,4 @@ def main_list(params):
         fanart="https://yt3.ggpht.com/-pzPllYqp4JI/VqawKqInG8I/AAAAAAAAAm8/HdtGk40Imns/w1060-fcrop64=1,00005a57ffffa5a8-nd/SF%2BYouTube%2BChannel%2BArt%2Bjan%2B2016%2Bv2.jpg",
     	folder=True )
         
-####################################################################################
 run()
