@@ -29,6 +29,8 @@ YOUTUBE_CHANNEL_ID4 = "PLcUid3OP_4OUakQfcLmaQADU3nqGXantN"
 YOUTUBE_CHANNEL_ID5 = "PLcUid3OP_4OXhaCvxKPE6YGT75UJzrtOl"
 YOUTUBE_CHANNEL_ID6 = "PLcUid3OP_4OVMt2os96qImqAoNsXiZRHv"
 YOUTUBE_CHANNEL_ID7 = "PL7D2ADFB4C470C6A0"
+YOUTUBE_CHANNEL_ID8 = "UCwRXb5dUK4cvsHbx-rGzSgw"
+
 #################################################################################
 ######################## Insert channel names here ##############################
 #################################################################################
@@ -40,6 +42,7 @@ CHANNEL_NAME_4 = "Python 3 Basics"
 CHANNEL_NAME_5 = "HTML5 Canvas Basics"
 CHANNEL_NAME_6 = "PHP Tutorials"
 CHANNEL_NAME_7 = "JavaScript"
+CHANNEL_NAME_8 = "Derek Banas Channel"
 
 #################################################################################
 
@@ -67,7 +70,15 @@ def main_list(params):
 ###################################################################################
 
 ### Channel additions
-    plugintools.add_item( 
+    plugintools.add_item(
+        #action="",
+        title=""+CHANNEL_NAME_8+"",
+        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID8+"/",
+        thumbnail="https://yt3.ggpht.com/-SN1RQ4kN5bM/AAAAAAAAAAI/AAAAAAAAAAA/T39gSKk4e2g/s100-c-k-no/photo.jpg",
+        fanart="https://i.ytimg.com/u/wRXb5dUK4cvsHbx-rGzSgw/channels4_banner.jpg",
+        folder=True )
+
+    plugintools.add_item(
         #action="", 
         title=""+CHANNEL_NAME_1+"",
         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID1+"/",
